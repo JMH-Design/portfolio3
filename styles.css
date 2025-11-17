@@ -17,7 +17,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   width: 100%;
-  padding: 2rem 10rem;
+  padding: 2rem 13rem;
   gap: 4rem;
 }
 
@@ -155,6 +155,11 @@ body {
   position: relative;
 }
 
+.workgrid_item:nth-child(1),
+.workgrid_item:nth-child(2) {
+  grid-column: span 2;
+}
+
 .workgrid_item_container {
   width: 100%;
   height: 100%;
@@ -183,6 +188,14 @@ body {
   .workgrid {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
+  }
+}
+
+/* On small screens make sure items don't keep spanning columns */
+@media (max-width: 768px) {
+  .workgrid_item:nth-child(1),
+  .workgrid_item:nth-child(2) {
+    grid-column: auto;
   }
 }
 
