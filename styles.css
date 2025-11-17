@@ -49,6 +49,32 @@ body {
   gap: 0.25rem;
 }
 
+.header-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+  align-items: center;
+}
+
+.secondary-btn {
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-decoration: none;
+  display: inline;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  cursor: pointer;
+  text-align: center;
+}
+
+.primary-btn {
+  padding: 0.45rem 0.9rem;
+}
+
 .name {
   font-size: 1rem;
   letter-spacing: 0.05em;
