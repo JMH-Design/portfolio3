@@ -123,22 +123,31 @@ body {
   font-size: 1.1rem;
   font-weight: 400;
   text-decoration: none;
-  display: inline-block;
+  display: inline;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 0.9rem;
   margin-top: 0.5rem;
-  position: relative;
-  background: linear-gradient(to right, #666 10%, #fff 30%, #666 50%, #fff 70%, #666 90%);
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  cursor: pointer;
+  background-image: linear-gradient(to right, #666 10%, #fff 50%, #666 90%);
   background-size: 200% 100%;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  animation: shimmer 6s infinite ease-out;
-  transition: 0.3s ease;
+  animation: shimmer 5s infinite linear;
+  transition: transform 0.3s ease, opacity 0.12s ease, background-color 0.12s ease;
+  width: 100px;
+  text-align: center;
 }
 
 .craft-link:hover {
-  color:#fff;
-  translate: 10px;
+  opacity: 0.95;
+  transform: translateX(10px);
+  background-color: rgba(255, 255, 255, 0.06);
   transition: 0.3s ease;
 }
 
