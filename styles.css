@@ -10,6 +10,21 @@ body {
   background-color: #18181b;
   color: #fff;
   line-height: 1.6;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("./Assets/Pattern.svg");
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: center;
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: -1;
 }
 
 .container {
@@ -35,8 +50,8 @@ body {
 }
 
 .profile-picture {
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
@@ -104,6 +119,7 @@ body {
   gap: 2rem;
   flex-direction: column;
   justify-content: space-between;
+  height: 500px;
 }
 
 .banner-video {
@@ -119,6 +135,8 @@ body {
   display: flex; 
   gap: 2rem;
   width: 100%;
+  min-height: 60vh;          
+  position: relative;
 }
 
 .title {
@@ -129,6 +147,15 @@ body {
   letter-spacing: 0.05em;
   margin: 0;
   color: #fff;
+}
+
+.split-line {
+  display: block;
+  overflow: hidden;
+}
+
+.split-word {
+  display: inline-block;
 }
 
 .description {
@@ -155,7 +182,7 @@ body {
   display: inline;
   align-items: center;
   gap: 0.5rem;
-  padding: 0.45rem 0.9rem;
+  padding: 0.45rem 0.45rem;
   margin-top: 0.5rem;
   border-radius: 100px;
   background-color: rgba(255, 255, 255, 0.04);
@@ -176,6 +203,7 @@ body {
 .resume {
   display:flex;
   align-items: center;
+  gap: 0.25rem;
 }
 
 .arrow {
@@ -288,7 +316,6 @@ body {
   }
 }
 
-/* On small screens make sure items don't keep spanning columns */
 @media (max-width: 768px) {
   .workgrid_item:nth-child(1),
   .workgrid_item:nth-child(2) {

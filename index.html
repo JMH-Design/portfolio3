@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,14 +12,16 @@
       href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="container">
       <div class="top-content">
         <div class="header-section">
           <img
-            src="./Assets/HeadshotPNG.png"
-            alt="Jared Haggit"
+            src="./Assets/Group 13.png"
+            alt="Personal logo for product designer Jared Haggit"
             class="profile-picture"
           />
           <div class="header-text">
@@ -27,36 +30,41 @@
           </div>
 
           <div class="header-buttons">
-            <div class="resume"><a class="primary-btn">Resume</a><svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-icon lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-              </div>
-            <a class="secondary-btn">Book a Call</a>
+            <a class="primary-btn resume" href="#">
+              Resume
+              <svg class="arrow lucide lucide-arrow-right-icon lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+            <a class="secondary-btn" href="#">Book a Call</a>
           </div>
         </div>
 
         <div class="banner">
           <div class="sub-banner">
-        <div class="intro-section">
-          <h2 class="title">Hi, I'm Jared.</h2>
-          <p class="description">
-            Designer and self-taught engineer. Currently building a 0-1 product
-            at JPMC.
-          </p>
-          <a href="#" class="craft-link">Craft →</a>
-        </div>
+            <div class="intro-section">
+              <h2 class="title" id="hero-title">Hi, I'm Jared.</h2>
+              <p class="description">
+                Designer and self-taught engineer. Currently building a 0-1 product
+                at JPMC.
+              </p>
+              <a href="#" class="craft-link">Craft</a>
+            </div>
 
-        <div class="experience-section">
-          <p class="experience-text">
-            Previously worked at
-            <a href="#" class="link">Kroger</a>,
-            <a href="#" class="link">PNC</a>, and
-            <a href="#" class="link">GE Aerospace</a>. Studied philosophy &
-            physics. 3 majors completed in <a href="#" class="link">Boston</a>,
-            <a href="#" class="link">Chicago</a> &
-            <a href="#" class="link">NYC</a>.
-          </p>
-        </div>
-      </div>
-      <video controls autoplay class="banner-video" src="./Assets/14631672_2160_3840_60fps.mp4"></video>
+            <div class="experience-section">
+              <p class="experience-text">
+                Previously worked at
+                <a href="#" class="link">Kroger</a>,
+                <a href="#" class="link">PNC</a>, and
+                <a href="#" class="link">GE Aerospace</a>. Studied philosophy &
+                physics. 3 majors completed in <a href="#" class="link">Boston</a>,
+                <a href="#" class="link">Chicago</a> &
+                <a href="#" class="link">NYC</a>.
+              </p>
+            </div>
+          </div>
+          <video controls autoplay muted playsinline class="banner-video" src="./Assets/14631672_2160_3840_60fps.mp4"></video>
       </div>
 
       <div class="right-content">
