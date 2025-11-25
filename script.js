@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
   title.appendChild(line);
 
   if (window.gsap) {
+    // Animate hero title words
     gsap.from(".split-word", {
       yPercent: 100,
       opacity: 0,
@@ -34,5 +35,17 @@ document.addEventListener("DOMContentLoaded", () => {
       ease: "power3.out",
       delay: 0.2,
     });
+
+    // Animate banner video/image in on page load
+    const bannerMedia = document.querySelector(".banner-image");
+    if (bannerMedia) {
+      gsap.from(bannerMedia, {
+        opacity: 0,
+        y: 40,
+        duration: 1.1,
+        ease: "power3.out",
+        delay: 1.0,
+      });
+    }
   }
 });
